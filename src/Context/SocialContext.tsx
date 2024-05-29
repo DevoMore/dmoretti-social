@@ -6,6 +6,8 @@ export interface ISocialContext {
     setJsonData: (args: TPost[]) => void
     selectedPost: TPost | undefined,
     setSelectedPost: (args: TPost) => void
+    onCheck: boolean
+    setOnCheck: (args:boolean) => void
 }
 
 export const SocialContext = createContext<ISocialContext | null>(null);

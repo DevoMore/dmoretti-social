@@ -1,16 +1,23 @@
 import React, { useContext, useEffect, useState } from "react";
+import { ISocialContext, SocialContext } from "../../Context/SocialContext";
 
 
 function NavBar() {
+    const context = useContext(SocialContext) as ISocialContext
 
-    function createPost(){
-        console.log("a")
-    }
-    
+
+    function handleClick(){
+        if(context.onCheck === false){
+            context.setOnCheck(true)
+        }else{
+            context.setOnCheck(false)
+        }
+    }   
+
     return (
         <div>
             <h2>MySocial</h2>
-            <button onClick={() => createPost()}>New Post</button>
+            <button onClick={handleClick}>New Post</button>
         </div>
     )
 }
