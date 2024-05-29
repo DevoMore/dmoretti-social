@@ -9,6 +9,8 @@ function CreatePost(){
 
     const { jsonData, setJsonData } = useContext(SocialContext) as ISocialContext
 
+    const context = useContext(SocialContext) as ISocialContext
+   
         function publishPost(){
         if(jsonData) {
             const obj: TPost = {
@@ -23,7 +25,12 @@ function CreatePost(){
             let view =jsonData
             view.push(obj)
             setJsonData([...view])
-            console.log(view)
+
+            if(context.Check === false) {
+                context.setCheck(true)
+            } else {
+                context.setCheck(false)
+            }
     }
 } 
 
