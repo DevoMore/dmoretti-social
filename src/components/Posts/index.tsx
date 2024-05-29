@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useState } from "react";
+import React, { useContext } from "react";
 import { SocialContext, ISocialContext } from "../../Context/SocialContext";
 import './style.css'
 
@@ -9,7 +9,7 @@ function Posts() {
         <div className="principal">
             <h3>Posts</h3>
             <ul>
-                {context.jsonData && context.jsonData.map((item,index) => (
+                {context.jsonData && context.jsonData.slice().reverse().map((item,index) => (
                     <div className="post" key={index}>
                         <div className="title">{item.title}</div>
                         <div className="user">written by: {item.userId}</div>
