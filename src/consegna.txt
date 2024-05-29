@@ -6,3 +6,8 @@ Inviare email a pietro.sardaro@lutech.it
     MESSAGGIO email:
     -Link del proggetto.
     -Link del sito online.
+
+NOTA: 
+1. Usar API y agarrar los posts de "https://dummyjson.com/docs/posts" Get All Posts.
+2. Usar el useEffect, useState & useContext (hook & actions).
+3. Crear un social funcional.
