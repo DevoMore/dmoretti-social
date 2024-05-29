@@ -8,7 +8,7 @@ function CreatePost(){
     const [create, setCreate] = useState<boolean>()
 
     const { selectedPost, jsonData, setJsonData } = useContext(SocialContext) as ISocialContext
-
+//c
 //         function a(){
 //         if(jsonData) {
 //             const obj = {
