@@ -1,0 +1,8 @@
+DETTAGLI CONSEGNA
+Inviare email a pietro.sardaro@lutech.it
+
+    OGGETTO email: Consegna proggeto "Devorah Alessandra Moretti"
+
+    MESSAGGIO email:
+    -Link del proggetto.
+    -Link del sito online.
