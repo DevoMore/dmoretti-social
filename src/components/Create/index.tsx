@@ -7,7 +7,7 @@ function CreatePost() {
 
     const [postText, setPostText] = useState<string>('')
     const [postTitle, setPostTitle] = useState<string>('')
-    const [postTags, setPostTags] = useState<string>('')
+    const [postTags, setPostTags] = useState<string[]>([])
 
     const { jsonData, setJsonData } = useContext(SocialContext) as ISocialContext
 
@@ -23,7 +23,7 @@ function CreatePost() {
                 tags: postTags,
                 reactions: { likes: 0 },
                 views: 0,
-                userId: 0
+                userId: Math.floor(Math.random() * 350)
             }
             let view = jsonData
             view.push(obj)
@@ -42,19 +42,16 @@ function CreatePost() {
             <input
                 required
                 placeholder="Write a title..."
-                value={postTitle}
                 onChange={(event) => setPostTitle(event.target.value)}
             />
             <textarea
                 required
                 placeholder="Write something here..."
-                value={postText}
                 onChange={(event) => setPostText(event.target.value)}
             />
             <textarea id="tag"
                 placeholder="Tags..."
-                value={postTags}
-                onChange={(event) => setPostTags(event.target.value)}
+                onChange={(event) => setPostTags((event.target.value).split(" "))}
             />
             <button onClick={() => publishPost()}>Publish</button>
         </div>

@@ -16,7 +16,7 @@ function Posts() {
                         <div className="title">{item.title}</div>
                         <div className="user">written by: User #{item.userId}</div>
                         <div className="body">{item.body}</div>
-                        <div className="tags">{item.tags}</div>
+                        <div className="tags">#{item.tags.join(" #")}</div>
                         <div className="extras">
                             <div>
                                 <button id="like" onClick={() => { setLike(like + 1) }}>❤️</button>
