@@ -1,0 +1,36 @@
+.create{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 32px;
+}
+
+input{
+    height: 10vh;
+    width: 50vw;
+    margin: 16px;
+    border-radius: 25px;
+    border: 4px solid, rgb(163, 0, 63);
+    padding: 8px 8px 8px 16px;
+    color: rgb(163, 0, 63);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+textarea{
+    height: 50vh;
+    width: 50vw;
+    margin: 16px;
+    border-radius: 25px;
+    border: 4px solid, rgb(163, 0, 63);
+    padding: 32px 24px 24px 32px;
+    color: rgb(163, 0, 63);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#tag{
+    height: 5vh;
+}
+
+button{
+    margin:16px
+}
