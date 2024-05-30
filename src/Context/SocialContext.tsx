@@ -7,7 +7,7 @@ export interface ISocialContext {
     selectedPost: TPost | undefined,
     setSelectedPost: (args: TPost) => void
     Check: boolean
-    setCheck: (args:boolean) => void
+    setCheck: (args: boolean) => void
 }
 
 export const SocialContext = createContext<ISocialContext | null>(null);

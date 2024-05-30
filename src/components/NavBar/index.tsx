@@ -6,12 +6,12 @@ function NavBar() {
     const context = useContext(SocialContext) as ISocialContext
 
     function whenClick() {
-        if(context.Check === false) {
+        if (context.Check === false) {
             context.setCheck(true)
         } else {
             context.setCheck(false)
         }
-    }   
+    }
 
     return (
         <div className="nav">

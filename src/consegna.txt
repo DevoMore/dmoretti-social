@@ -11,3 +11,11 @@ NOTA:
 1. Usar API y agarrar los posts de "https://dummyjson.com/docs/posts" Get All Posts.
 2. Usar el useEffect, useState & useContext (hook & actions).
 3. Crear un social funcional.
+
+Verificar:
+1. "Media query".
+2. La id del user (random).
+3. Minimo de caracteres 10 para publicar.
+4. Los hashtags.
+5. Los likes y las views.
+6. Local Storage.
